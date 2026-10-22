@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100713">
+  <meta name="description" content="Ulises te invita a una noche de Halloween inolvidable.">
+  <title>ULISES.exe — Halloween Birthday</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="assets/video.mp4" type="video/mp4">
+  </video>
+
+  <div class="dark-overlay"></div>
+  <div class="fog fog-one"></div>
+  <div class="fog fog-two"></div>
+
+  <div class="ambient" aria-hidden="true">
+    <span>✦</span><span>✧</span><span>✦</span>
+    <span>✧</span><span>✦</span><span>✧</span>
+  </div>
+
+  <audio id="music" loop preload="none">
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">ULISES<span>.EXE</span></a>
+    <span class="top-label">OCT 24 · HALLOWEEN EDITION</span>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="status reveal">
+        <span class="status-dot"></span>
+        ESTÁS EN LA LISTA DE INVITADOS
+      </div>
+
+      <p class="eyebrow reveal">UNA NOCHE. UN CUMPLEAÑOS. CERO CORDURA.</p>
+
+      <h1 class="reveal">
+        HAPPY<br>
+        <span class="halloween-word">HALLOWEEN</span><br>
+        <span class="birthday-word">BIRTHDAY</span>
+      </h1>
+
+      <div class="name-wrap reveal">
+        <span class="side-line"></span>
+        <p>EL CUMPLEAÑERO</p>
+        <span class="side-line"></span>
+      </div>
+
+      <h2 class="friend-name reveal">ULISES</h2>
+
+      <p class="hero-copy reveal">
+        La noche más oscura del año tiene una excusa para ponerse buena.
+        Estás invitado. No desaparezcas.
+      </p>
+
+      <button class="primary-btn reveal" id="enterBtn" type="button">
+        <span>☠ ENTRAR BAJO TU PROPIO RIESGO</span>
+        <span aria-hidden="true">↗</span>
+      </button>
+
+      <p class="music-status" id="musicStatus">
+        ♫ La experiencia comienza al entrar
+      </p>
+
+      <a class="scroll-link" href="#detalles">
+        DESCUBRIR LA MISIÓN <span>↓</span>
+      </a>
+
+      <span class="corner-mark mark-left">☠</span>
+      <span class="corner-mark mark-right">☠</span>
+    </section>
+
+    <section class="details" id="detalles">
+      <div class="section-inner">
+        <p class="eyebrow reveal">ARCHIVO CLASIFICADO · 24.10.26</p>
+        <h2 class="section-title reveal">
+          NO FALTES A<br><span>LA INVOCACIÓN.</span>
+        </h2>
+
+        <p class="section-copy reveal">
+          Una celebración para Ulises. Vení a pasarla bien,
+          sobreviví a la noche y llevate una historia para contar.
+        </p>
+
+        <div class="countdown-panel reveal">
+          <p class="panel-label">TIEMPO RESTANTE HASTA EL EVENTO</p>
+
+          <div class="countdown" id="countdown">
+            <div class="time-unit">
+              <strong id="days">00</strong>
+              <span>DÍAS</span>
+            </div>
+            <div class="time-unit">
+              <strong id="hours">00</strong>
+              <span>HORAS</span>
+            </div>
+            <div class="time-unit">
+              <strong id="minutes">00</strong>
+              <span>MINUTOS</span>
+            </div>
+            <div class="time-unit">
+              <strong id="seconds">00</strong>
+              <span>SEGUNDOS</span>
+            </div>
+          </div>
+
+          <p id="countdownMessage" class="countdown-message"></p>
+        </div>
+
+        <div class="info-grid reveal">
+          <article class="info-card">
+            <span class="card-icon">☾</span>
+            <p class="card-label">FECHA</p>
+            <h3>24 OCTUBRE</h3>
+            <p>Sábado de Halloween</p>
+          </article>
+
+          <article class="info-card">
+            <span class="card-icon">◷</span>
+            <p class="card-label">HORA</p>
+            <h3>00:00</h3>
+            <p>Inicio del evento</p>
+          </article>
+
+          <article class="info-card location-card">
+            <span class="card-icon">⌖</span>
+            <p class="card-label">UBICACIÓN</p>
+            <h3>EL PUNTO DE ENCUENTRO</h3>
+            <p>La ubicación está en el mapa</p>
+
+            <a
+              class="map-link"
+              href="https://maps.app.goo.gl/ARvxT8y1GF5j6Ma79?g_st=ic"
+              target="_blank"
+              rel="noopener noreferrer">
+              ABRIR MAPA ↗
+            </a>
+          </article>
+        </div>
+
+        <div class="warning-note reveal">
+          <span>⚠</span>
+          <p>
+            AVISO: venir con ganas de pasarla bien es obligatorio.
+            Las consecuencias de una buena noche quedan bajo tu responsabilidad.
+          </p>
+        </div>
+
+        <a id="rsvpBtn" class="primary-btn whatsapp-btn reveal"
+           href="#" target="_blank" rel="noopener noreferrer" hidden>
+          CONFIRMAR ASISTENCIA POR WHATSAPP ↗
+        </a>
+
+        <p id="rsvpNotice" class="rsvp-notice">
+          Confirmá tu asistencia con el organizador.
+        </p>
+
+        <button class="secondary-btn reveal" id="replayBtn" type="button">
+          ♫ ACTIVAR / REANUDAR MÚSICA
+        </button>
+
+        <footer class="footer">
+          <p>MADE FOR THE NIGHT</p>
+          <h2>ULISES<span>©</span></h2>
+          <p>24.10.2026 · NOCHES QUE NO SE OLVIDAN</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <button class="sound-btn" id="soundBtn" type="button"
+          aria-label="Silenciar música" hidden>
+    <span class="sound-icon">♫</span>
+    <span id="soundLabel">MÚSICA ON</span>
+  </button>
+</body>
+</html>
